@@ -38,20 +38,7 @@ h2{
     color: #000000;
     font-weight: 300;
 }
-.input-label{
-    font-size: 1.5rem;
-    display:inline;
-    margin-right: 10px;
-    font-family: fantasy;
-    color:#08382c;
 
-}
-
-.input-item{
-  background-color: rgb(246, 246, 246);
-    color:#08382c;
-    box-shadow: 0 10px 10px #08382c;;
-}
 
 .button{
   font-size: 20px;
