@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(14, 13, 13, 0.925);
+    font-family: Verdana, "Poppins","Noto Sans TC",Arial, Tahoma, sans-serif;
+}
+.navbar{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    background: rgba(0, 0, 0, 6) !important;
+    padding: 20px 0;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+    padding-left: 20px;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+.heading-content{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    max-width: 100%;
+}
+.heading-content h1{
+    font-size: 3em;
+    font-weight: 300;
+    color: rgb(224, 215, 215);
+    font-family: "Noto Sans TC"Arial,monospace;
+    
+}
+.heading-content h5{
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgb(211, 198, 198);
+    font-family: "Noto Sans TC",Arial,'Montsrrat', sans-serif;
+}
+.heading-content p{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #ccc;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.w-50{
+    color: #ccc;
+}
+.post-heading{
+    color: #fff;
+}
+#about h2{
+    color: #ccc;
+}
+#about p{
+    color: rgb(163, 143, 143);
+}
+#about .btn{
+    border:2px solid transparent;
+    width: 40%;
+    padding: 15px 22px;
+    background: rgb(105, 102, 102);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#about .btn a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#about .btn:hover{
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+.pb-5 {
+    padding-bottom: 0.2rem!important;
+}
+
+.heading-content{
+    backdrop-filter: blur(10px);
+}
+@media  screen and (max-width: 1060px) {
+
+}
+
+@media  screen and (max-width: 650px) {
+    .heading-content{
+        position:static;
+
+    }
+}
+
+h1{
+    font-family: "Poppins","Noto Sans TC",sans-serif;
+}
+
+p{
+   font-family:  Verdana, "Poppins","Noto Sans TC",sans-serif, Tahoma, sans-serif;
+}

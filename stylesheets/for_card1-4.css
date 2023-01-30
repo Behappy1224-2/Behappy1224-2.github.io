@@ -1,0 +1,65 @@
+/* dogod */
+body{
+    background-color: black;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.music_class{
+    color: white;
+    font-size: 60px;
+}
+
+.music_recommand{
+    color: white;
+    font-size: 40px;
+}
+
+.music_content{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.music_name{
+    color: white;
+    font-size: 20px;
+}
+
+.music_dis{
+    color: #9D9D9D;
+    font-size: 20px;
+}
+
+.picture_song{
+    width: 250px;
+    margin-right: 120px;
+}
+
+.for_title{
+    padding-top: 50px;
+    padding-left: 15px;
+    position: fixed;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    list-style: none;
+}
+
+
+.for_loc{
+    color: white;
+    background-color: black;
+}
+.for_home{
+    color: #9D9D9D;
+    background-color: black;
+}
+
+.but{
+    background-color: black;
+}

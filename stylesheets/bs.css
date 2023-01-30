@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+#bs h1 {
+  color: #ccc;
+}
+
+#bs .first .col-xxl-1 {
+  height: 20px;
+}
+#bs .first .col-xxl-1:nth-child(1) {
+  background-color: #004080;
+}
+#bs .first .col-xxl-1:nth-child(2) {
+  background-color: #004d99;
+}
+#bs .first .col-xxl-1:nth-child(3) {
+  background-color: #0059b3;
+}
+#bs .first .col-xxl-1:nth-child(4) {
+  background-color: #0066cc;
+}
+#bs .first .col-xxl-1:nth-child(5) {
+  background-color: #0073e6;
+}
+#bs .first .col-xxl-1:nth-child(6) {
+  background-color: #0080ff;
+}
+#bs .first .col-xxl-1:nth-child(7) {
+  background-color: #1a8cff;
+}
+#bs .first .col-xxl-1:nth-child(8) {
+  background-color: #3399ff;
+}
+#bs .first .col-xxl-1:nth-child(9) {
+  background-color: #4da6ff;
+}
+#bs .first .col-xxl-1:nth-child(10) {
+  background-color: #66b3ff;
+}
+#bs .first .col-xxl-1:nth-child(11) {
+  background-color: #80bfff;
+}
+#bs .first .col-xxl-1:nth-child(12) {
+  background-color: #99ccff;
+}
+#bs .first .col-xxl-1:nth-child(13) {
+  background-color: #b3d9ff;
+}
+
+#bs .second .col-lg-1 {
+  height: 20px;
+}
+#bs .second .col-lg-1:nth-child(1) {
+  background-color: #800033;
+}
+#bs .second .col-lg-1:nth-child(2) {
+  background-color: #99003e;
+}
+#bs .second .col-lg-1:nth-child(3) {
+  background-color: #b30048;
+}
+#bs .second .col-lg-1:nth-child(4) {
+  background-color: #cc0052;
+}
+#bs .second .col-lg-1:nth-child(5) {
+  background-color: #e6005c;
+}
+#bs .second .col-lg-1:nth-child(6) {
+  background-color: #ff0067;
+}
+#bs .second .col-lg-1:nth-child(7) {
+  background-color: #ff1a76;
+}
+#bs .second .col-lg-1:nth-child(8) {
+  background-color: #ff3385;
+}
+#bs .second .col-lg-1:nth-child(9) {
+  background-color: #ff4d94;
+}
+#bs .second .col-lg-1:nth-child(10) {
+  background-color: #ff66a4;
+}
+#bs .second .col-lg-1:nth-child(11) {
+  background-color: #ff80b3;
+}
+#bs .second .col-lg-1:nth-child(12) {
+  background-color: #ff99c2;
+}
+#bs .second .col-lg-1:nth-child(13) {
+  background-color: #ffb3d1;
+}
+
+#bs .third div {
+  height: 100px;
+}
+#bs .third .col-md-3 {
+  background-color: #666;
+}
+#bs .third .col-md-6 {
+  background-color: #fff;
+}
+
+#bs .fourth div {
+  height: 100px;
+}
+#bs .fourth .col-sm-4 {
+  background-color: rgb(163, 255, 163);
+}
+#bs .fourth .col-sm-8 {
+  background-color: green;
+}
+
+@media screen and (max-width: 830px) {
+  #bs h1 {
+    font-size: 20px;
+  }
+  #bs .first {
+    display: none;
+  }
+}
+@media screen and (max-width: 610px) {
+  #bs .second {
+    display: none;
+  }
+}/*# sourceMappingURL=bs.css.map */

@@ -1,0 +1,618 @@
+body{
+    background-color: rgb(44, 41, 41);
+    
+}
+body{
+    animation:transitionIn 1s;
+}
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+
+}
+
+
+.linear-wipe {
+    text-align: center;
+    
+    background: linear-gradient(to right, rgb(255, 255, 255) 10%, rgb(217, 216, 216) 20%, rgb(146, 146, 146) 30%, rgb(87, 87, 87) 40%
+    , rgb(87, 87, 87) 50%, rgb(146, 146, 146) 60%, rgb(217, 216, 216) 80%, rgb(255, 255, 255) 90%);
+    background-size: 200% auto;
+    
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 4s linear infinite;
+   
+  }
+ @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+
+
+@media screen and (min-width: 450px) and (max-width: 1024px){ 
+    .main{
+    
+        border-radius: 15px;
+        background-image: url(../../images/maroon5/maroon5.jpg);
+    }
+    
+    .pic{
+        height:89vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }       
+ }
+
+@media screen and (max-width: 450px) { 
+    .main{
+    
+        border-radius: 15px;
+        background-image: url(../../images/maroon5/maroon5-2.jpg);
+    }
+    .pic{
+    height:89vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top;
+    }       
+}
+
+@media screen and (min-width: 1024px) { 
+    .main{
+    
+        border-radius: 15px;
+        background-image: url(../../images/maroon5/maroon5.jpg);
+    }
+    .pic{
+    height:89vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    }       
+}
+
+
+
+.bi-reply{
+    padding-left: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 4.2rem;
+    transition: .3s linear;
+}
+.bi-reply:hover{
+    color:white;
+}
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+@media screen and (max-width: 580px) { 
+    .title{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(30, 30, 30, 0.699);
+       
+        margin-left: 55vw;
+        width:35vw;
+        margin-bottom: 2.5vw;
+        color: white;
+        border:5px solid rgba(80, 80, 138, 0.955);
+        min-height: 50px;
+    }
+    
+    h1{ 
+    
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 800;
+        font-size: 1.2rem;
+        padding-top: 1vh;
+    }
+    p{  
+        position:absolute;
+        color: black;
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 600;
+        font-size: 0.8rem;
+        left:12vw;
+        top:1.3vh;
+    }
+    .music{
+        position:absolute;
+        width:30vw;
+        height: 5vh;
+        right:3vw;
+        top:0.6vh;
+    } 
+    
+    
+    
+    .image{
+        position: absolute;
+        left:1vw;
+        height: 4vh;
+        top:1vh
+    }
+    .object{
+        min-height: 6.5vh;
+        position: relative;
+        margin-left: 10vw;
+        margin-right: 3vw;
+        border-radius: 23px;
+        color: white;
+        background-color: rgb(203, 203, 203);
+    }
+    .fin{
+        margin-top: 2.5vh;
+    }
+    
+}
+
+
+@media screen and (min-width: 580px) and (max-width:991px){ 
+    .title{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(30, 30, 30, 0.699);
+        margin-top: 1vh;
+        margin-left: 32vw;
+        width:17.5vw;
+        margin-bottom: 2.5vw;
+        color: white;
+        border:5px solid rgba(80, 80, 138, 0.955);
+        min-height: 50px;
+    }
+    
+    h1{ 
+    
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding-top: 1vh;
+    }
+    p{  
+        position:absolute;
+        color: black;
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        left:8vw;
+        top:1.3vh;
+    }
+    .music{
+        
+        position:absolute;
+        width:20vw;
+        height: 5vh;
+        right:1vw;
+        top:0.6vh;
+    } 
+    
+    
+    
+    .image{
+        position: absolute;
+        left:1vw;
+        height: 6vh;
+        top:0.2vh
+    }
+    .object{
+        min-height: 6.5vh;
+        position: relative;
+        margin-left: 20vw;
+        margin-right: 3vw;
+        border-radius: 23px;
+        color: white;
+        background-color: rgb(203, 203, 203);
+    }
+    
+    .fin{
+        margin-top: 2.5vh;
+    }
+
+ }
+
+ @media screen and (min-width: 991px) and (max-width: 1100px){ 
+    .title{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(30, 30, 30, 0.699);
+        margin-top: 3vh;
+        margin-left: 32vw;
+        width:17.5vw;
+        margin-bottom: 2.5vw;
+        color: white;
+        border:5px solid rgba(80, 80, 138, 0.955);
+        min-height: 50px;
+    }
+    
+    h1{ 
+    
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding-top: 1vh;
+    }
+    p{  
+        position:absolute;
+        color: black;
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        left:5.3vw;
+        top:1.3vh;
+    }
+    .music{
+        
+        position:absolute;
+        width:24vw;
+        height: 5vh;
+        right:1vw;
+        top:0.6vh;
+    } 
+    
+    
+    
+    .image{
+        position: absolute;
+        left:1vw;
+        height: 6vh;
+        top:0.2vh
+    }
+    .object{
+        min-height: 6.5vh;
+        position: relative;
+        margin-left: 35vw;
+        margin-right: 3vw;
+        border-radius: 23px;
+        color: white;
+        background-color: rgb(203, 203, 203);
+    }
+    
+    .fin{
+        margin-top: 2.5vh;
+    }
+
+ }
+
+@media screen and (min-width: 1100px) and (max-width: 1200px){ 
+    .title{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(30, 30, 30, 0.699);
+        margin-top: 3vh;
+        margin-left: 30vw;
+        width:17.5vw;
+        margin-bottom: 2.5vw;
+        color: white;
+        border:5px solid rgba(80, 80, 138, 0.955);
+        min-height: 50px;
+    }
+    
+    h1{ 
+    
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding-top: 1vh;
+    }
+    p{  
+        position:absolute;
+        color: black;
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        left:5.3vw;
+        top:1.3vh;
+    }
+    .music{
+        
+        position:absolute;
+        width:24vw;
+        height: 5vh;
+        right:1vw;
+        top:0.6vh;
+    } 
+    
+    
+    
+    .image{
+        position: absolute;
+        left:1vw;
+        height: 6vh;
+        top:0.2vh
+    }
+    .object{
+        min-height: 6.5vh;
+        position: relative;
+        margin-left: 30vw;
+        margin-right: 3vw;
+        border-radius: 23px;
+        color: white;
+        background-color: rgb(203, 203, 203);
+    }
+    
+    .fin{
+        margin-top: 2.5vh;
+    }
+
+ }
+
+@media screen and (min-width: 1200px) and (max-width: 1300px){ 
+    .title{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(30, 30, 30, 0.699);
+        margin-top: 3vh;
+        margin-left: 39vw;
+        width:17.5vw;
+        margin-bottom: 2.5vw;
+        color: white;
+        border:5px solid rgba(80, 80, 138, 0.955);
+        min-height: 50px;
+    }
+    
+    h1{ 
+    
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding-top: 1vh;
+    }
+    p{  
+        position:absolute;
+        color: black;
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        left:5.3vw;
+        top:1.3vh;
+    }
+    .music{
+        position:absolute;
+        width:23vw;
+        height: 5vh;
+        right:1vw;
+        top:0.6vh;
+    } 
+    
+    
+    
+    .image{
+        position: absolute;
+        left:1vw;
+        height: 6vh;
+        top:0.2vh
+    }
+    .object{
+        min-height: 6.5vh;
+        position: relative;
+        margin-left: 40vw;
+        margin-right: 3vw;
+        border-radius: 23px;
+        color: white;
+        background-color: rgb(203, 203, 203);
+    }
+    .fin{
+        margin-top: 2.5vh;
+    }
+    
+
+ }
+
+@media screen and (min-width: 1300px) and (max-width: 1400px){ 
+    .title{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(30, 30, 30, 0.699);
+        margin-top: 3vh;
+        margin-left: 39vw;
+        width:17.5vw;
+        margin-bottom: 2.5vw;
+        color: white;
+        border:5px solid rgba(80, 80, 138, 0.955);
+        min-height: 50px;
+    }
+    
+    h1{ 
+    
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding-top: 1vh;
+    }
+    p{  
+        position:absolute;
+        color: black;
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        left:5.3vw;
+        top:1.3vh;
+    }
+    .music{
+        position:absolute;
+        width:19.2vw;
+        height: 5vh;
+        right:1vw;
+        top:0.6vh;
+    } 
+    
+    
+    
+    .image{
+        position: absolute;
+        left:1vw;
+        height: 6vh;
+        top:0.2vh
+    }
+    .object{
+        min-height: 6.5vh;
+        position: relative;
+        margin-left: 40vw;
+        margin-right: 3vw;
+        border-radius: 23px;
+        color: white;
+        background-color: rgb(203, 203, 203);
+    }
+    .fin{
+        margin-top: 2.5vh;
+    }
+    
+
+ }
+
+
+
+ @media screen and (min-width: 1400px) and (max-width: 1550px){ 
+    
+    .title{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(30, 30, 30, 0.699);
+    margin-top: 3vh;
+    margin-left: 39vw;
+    width:17.5vw;
+    margin-bottom: 2.5vw;
+    color: white;
+    border:5px solid rgba(80, 80, 138, 0.955);
+    min-height: 50px;
+}
+
+    h1{ 
+    
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 800;
+        font-size: 2.2rem;
+        padding-top: 1vh;
+    } 
+    p{  
+        position:absolute;
+        color: black;
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 500;
+        font-size: 1.3rem;
+        left:5.3vw;
+        top:1.3vh;
+    }
+    
+    .music{
+        position:absolute;
+        width:19.2vw;
+        height: 5vh;
+        right:1vw;
+        top:0.6vh;
+    } 
+
+
+
+    .image{
+        position: absolute;
+        left:1vw;
+        height: 6vh;
+        top:0.2vh
+    }
+    
+    .object{
+        min-height: 6.5vh;
+        position: relative;
+        margin-left: 42.5vw;
+        margin-right: 3vw;
+        border-radius: 23px;
+        color: white;
+        background-color: rgb(203, 203, 203);
+    }
+
+    .fin{
+        margin-top: 2.5vh;
+    }
+
+}
+
+@media screen and (min-width: 1550px) { 
+    
+    .title{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(30, 30, 30, 0.699);
+    margin-top: 3vh;
+    margin-left: 39vw;
+    width:17.5vw;
+    margin-bottom: 2.5vw;
+    color: white;
+    border:5px solid rgba(80, 80, 138, 0.955);
+    min-height: 50px;
+}
+
+    h1{ 
+    
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 800;
+        font-size: 2.2rem;
+        padding-top: 1vh;
+    } 
+    p{  
+        position:absolute;
+        color: black;
+        font-family: "Poppins",Arial,sans-serif;
+        font-weight: 500;
+        font-size: 1.3rem;
+        left:5.3vw;
+        top:1.3vh;
+    }
+    
+    .music{
+        position:absolute;
+        width:19.2vw;
+        height: 5vh;
+        right:1vw;
+        top:0.6vh;
+    } 
+
+
+
+    .image{
+        position: absolute;
+        left:1vw;
+        height: 6vh;
+        top:0.2vh
+    }
+    
+    .object{
+        min-height: 6.5vh;
+        position: relative;
+        margin-left: 31vw;
+        margin-right: 3vw;
+        border-radius: 23px;
+        color: white;
+        background-color: rgb(203, 203, 203);
+    }
+
+    .fin{
+        margin-top: 2.5vh;
+    }
+
+}
+
+.tt{
+    min-height: 5.2vh;
+}
+
+
+
+
+
+

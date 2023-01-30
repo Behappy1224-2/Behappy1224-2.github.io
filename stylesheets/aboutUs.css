@@ -1,0 +1,986 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+#info-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: #ddd;
+}
+#info-wrap div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#info-wrap .upper {
+ flex: 1;
+ position: relative;
+}
+#info-wrap .lower {
+  flex: 1;
+  position: relative;
+}
+#map {
+  width: 100%;
+  height: 50%;
+  color: #000;
+}
+#altmap {
+  height: 100%;
+}
+
+#info-wrap .upper .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#recuit {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#recuit li {
+  line-height: 1.5;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.card-about a {
+  text-decoration: none;
+  color: #000;
+}
+.offset-text6 {
+  flex: 1;
+}
+#text6 {
+  font-size: 18px;
+  position: static;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#text6 div {
+  height: 20%;
+}
+@media screen and (max-width: 500px){
+  .text6{
+    position: absolute;
+    top:43vh;
+    left:10vw;
+    
+    
+    font-size: 1.7rem;
+  }
+  .offset-text6 {
+    display: none;
+  }
+  #text6 div {
+    display: none;
+  }
+  #text6 {
+    position: absolute;;
+  }
+  .text6 p {
+    margin-right: 5vw;
+  }
+}
+@media screen and (min-width:500px) and (max-width: 900px){
+  .text6{
+    position: absolute;
+    top:27vh;
+    left:49vw;
+    
+    
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 900px){ 
+  .text6{
+    position: absolute;
+    top:27vh;
+    left:49vw;
+    
+    
+    font-size: 2rem;
+  }
+
+}
+
+
+/* origin */
+body{
+  background-color: rgba(18, 18, 18, 0.925);
+  color: rgb(0, 0, 0);
+  font-family: "Poppins","Noto Sans TC",sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 500px){
+  .hidden1{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  }
+  
+  .show1{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  
+  .hidden2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  
+  }
+  
+  .show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  
+  .hidden3{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  
+  }
+  
+  .show3{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  
+  .box{
+    background-color: rgb(211, 211, 211);
+    box-shadow: 5px;
+    align-self: center;
+    display: flex;
+    height: 80vh;
+    width: 90%;
+
+    
+  }
+  
+
+
+  .box2{
+    background-color: rgb(211, 211, 211);
+    box-shadow: 5px;
+    align-self: center;
+    
+    height: 80vh;
+    width: 90%;
+  }
+  
+  .photo{
+
+    position: absolute;
+    top:18vh;
+    left:5vw;
+    width:22vh;
+   
+    height: auto;
+  }
+
+
+  .model{
+    width:80%;
+    height: 40vh;
+    position:absolute;
+    left:10vw;
+    top:45vh;
+   
+  }
+  .column{
+    float: left;
+   
+    padding: 1vw;
+    margin: 2vw;
+    
+  }
+  .column {
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+  .column:nth-child(2){
+    transition-delay: 150ms;
+  }
+  .column:nth-child(3){
+    transition-delay: 300ms;
+  }
+  .column:nth-child(4){
+    transition-delay: 450ms;
+  }
+  .row-about::after{
+    content:"";
+    display: table;
+    clear: both;
+  }
+
+  .card-about{
+   
+    width:100%;
+    height: 32vh;
+    padding: 5px;
+   
+    background:rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s linear;
+    overflow: hidden;
+
+  }
+  .detail{
+    font-size: 1rem;
+    
+  }
+   .detail span{
+    font-size: 1rem;
+  }
+  .card-about:hover{
+    height: 280px;
+  }
+  .card-about .content{
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .card-about .content .content2{
+    text-align: center;
+    transition: 0.5s;
+  }
+  .card-about .content .content2 h2{
+    font-size: 0.8rem;
+  }
+  .fab{
+    font-size: 2.1rem;
+    padding-top: 1.1vh;
+    
+  }
+  
+  .image{
+    border-radius: 5px;
+    width: 80px;
+    
+  }
+  
+  .text{
+    position: absolute;
+    left:10vw;
+   
+    top: 17vh;
+    
+    font-size: 2rem;
+  }
+  .text2{
+    position: absolute;
+ 
+    padding-top: 2vh;
+    top: 40vh;
+    width: 30vw;
+    left:20vw;
+    font-size: 3.2rem;
+  }
+  .text3{
+    position: absolute;
+
+    bottom: 20vh;
+    left:12vw;
+  
+    
+    font-size: 1.2rem;
+  }
+  .text4{
+    position: absolute;
+
+    top:25vh;
+   left:15vw;
+    
+    
+    font-size: 2.5rem;
+  }
+  .line{
+    position: absolute;
+    top:40vh;
+   height: 0;
+    width: 100%;
+    background-color: black;
+    border: 0.5px solid black;
+  }
+  .text5{
+    position: absolute;
+
+    top:22vh;
+    left:54vw;
+    
+    
+    font-size: 1.5rem;
+  }
+
+  .info{
+    color:rgb(239, 178, 178);
+    font-size: 2.1rem;
+    
+  }
+  .pic{
+    position: absolute;
+    top:40vh;
+    left:15vw;
+    width:70vw;
+    
+  
+  }
+  
+#parent {
+  
+  white-space: wrap;
+  overflow: hidden; 
+
+  position: relative;
+  
+}
+
+
+
+/* Animation */
+#parent {
+  animation: animated-text 2s steps(30,end) 1s 1 normal both
+}
+
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-bottom-color: rgba(0,255,0,.75);}
+  to{border-bottom-color: transparent;}
+}
+  
+
+}
+
+
+@media screen and (min-width:500px) and (max-width: 900px){
+  
+  
+  .box{
+    background-color: rgb(211, 211, 211);
+    box-shadow: 5px;
+    align-self: center;
+    display: flex;
+    height: 75vh;
+    width: 80%;
+
+    
+  }
+  
+
+
+  .box2{
+    background-color: rgb(211, 211, 211);
+    box-shadow: 5px;
+    align-self: center;
+    
+    height: 75vh;
+    width: 80%;
+  }
+  
+  .photo{
+    position: absolute;
+    top:18vh;
+    left:15vw;
+    width:30vw;
+   
+    height: auto;
+  }
+
+
+  .model{
+    width:47%;
+    height: 55vh;
+    position:absolute;
+    right:15vw;
+    top:24vh;
+   
+  }
+  .hidden1{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  
+  }
+  
+  .show1{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  
+  .hidden2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2s;
+  
+  }
+  
+  .show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  
+  .hidden3{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  
+  }
+  
+  .show3{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  .column{
+    
+    float: left;
+    position: relative;
+    padding: 1vw;
+    margin: 2vw;  
+    
+    
+  }
+  .column {
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+  .column:nth-child(2){
+    transition-delay: 150ms;
+  }
+  .column:nth-child(3){
+    transition-delay: 300ms;
+  }
+  .column:nth-child(4){
+    transition-delay: 450ms;
+  }
+  .row-about::after{
+    content:"";
+    display: table;
+    clear: both;
+  }
+
+  .card-about{
+   
+    width:100%;
+    height: 24vh;
+    padding: 5px;
+   
+    background:rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s linear;
+    overflow: hidden;
+  }
+  .detail{
+    font-size: 1rem;
+    
+  }
+   .detail span{
+    font-size: 1rem;
+  }
+  .card-about:hover{
+    height: 280px;
+  }
+  .card-about .content{
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .card-about .content .content2{
+    text-align: center;
+    transition: 0.5s;
+  }
+  .card-about .content .content2 h2{
+    font-size: 0.8rem;
+  }
+  .fab{
+    font-size: 2.1rem;
+    padding-top: 1.1vh;
+    
+  }
+  
+  .image{
+    border-radius: 5px;
+    width: 10vw;
+    
+  }
+  
+  .text{
+    position: absolute;
+    left:10vw;
+   
+    top: 10vh;
+    width: 30vw;
+    font-size: 3.2rem;
+  }
+  .text2{
+    position: absolute;
+ 
+    padding-top: 2vh;
+    top: 40vh;
+    width: 30vw;
+    left:20vw;
+    font-size: 3.2rem;
+  }
+  .text3{
+    position: absolute;
+
+    bottom: 15vh;
+   left:20vw;
+    width: 30vw;
+    
+    font-size: 1.2rem;
+  }
+  .text4{
+    position: absolute;
+
+    top:25vh;
+   left:15vw;
+    width: 30vw;
+    
+    font-size: 2.5rem;
+  }
+  .line{
+    position: absolute;
+    left:46vw;
+    height: 75vh;
+    width: 0;
+    background-color: black;
+    border: 0.5px solid black;
+  }
+  .text5{
+    position: absolute;
+
+    top:20vh;
+    left:49vw;
+    
+    
+    font-size: 2.5rem;
+  }
+
+  .info{
+    color:rgb(239, 178, 178);
+    font-size: 2.1rem;
+    
+  }
+  .pic{
+    position: absolute;
+    top:48vh;
+    right:18vw;
+    width:50vw;
+    
+  
+  }
+  
+#parent {
+  
+  white-space: wrap;
+  overflow: hidden; 
+
+  position: relative;
+  
+}
+
+#border {
+  border-bottom: solid 3px rgba(0,255,0,.75);
+  position: absolute;
+  right: -7px;
+  width: 20px;
+}
+
+/* Animation */
+#parent {
+  animation: animated-text 2s steps(30,end) 1s 1 normal both
+}
+
+#border {
+   animation: animated-cursor 600ms steps(30,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 480px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-bottom-color: rgba(0,255,0,.75);}
+  to{border-bottom-color: transparent;}
+}
+}
+
+@media screen and (min-width: 900px){ 
+  .hidden1{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  
+  }
+  
+  .show1{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  
+  .hidden2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2s;
+  
+  }
+  
+  .show2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  
+  .hidden3{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all 2.5s;
+  
+  }
+  
+  .show3{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  
+  .box{
+    background-color: rgb(211, 211, 211);
+    box-shadow: 5px;
+    align-self: center;
+    display: flex;
+    height: 75vh;
+    width: 80%;
+
+    
+  }
+  
+
+
+  .box2{
+    background-color: rgb(211, 211, 211);
+    box-shadow: 5px;
+    align-self: center;
+    
+    height: 75vh;
+    width: 80%;
+  }
+  
+  .photo{
+    position: absolute;
+    top:18vh;
+    left:15vw;
+    width:30vw;
+   
+    height: auto;
+  }
+
+
+  .model{
+    width:47%;
+    height: 55vh;
+    position:absolute;
+    right:15vw;
+    top:24vh;
+   
+  }
+  .column{
+    float: left;
+   
+    padding: 1vw;
+    margin: 2vw;
+    
+  }
+  .column {
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+  .column:nth-child(2){
+    transition-delay: 150ms;
+  }
+  .column:nth-child(3){
+    transition-delay: 300ms;
+  }
+  .column:nth-child(4){
+    transition-delay: 450ms;
+  }
+  .row-about::after{
+    content:"";
+    display: table;
+    clear: both;
+  }
+
+  .card-about{
+   
+    width:100%;
+    height: 32vh;
+    padding: 5px;
+   
+    background:rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s linear;
+    overflow: hidden;
+  }
+  .detail{
+    font-size: 1rem;
+    
+  }
+   .detail span{
+    font-size: 1rem;
+  }
+  .card-about:hover{
+    height: 280px;
+  }
+  .card-about .content{
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .card-about .content .content2{
+    text-align: center;
+    transition: 0.5s;
+  }
+  .card-about .content .content2 h2{
+    font-size: 0.8rem;
+  }
+  .fab{
+    font-size: 2.1rem;
+    padding-top: 1.1vh;
+    
+  }
+  
+  .image{
+    border-radius: 5px;
+    width: 10vw;
+    
+  }
+  
+  .text{
+    position: absolute;
+    left:10vw;
+   
+    top: 20vh;
+    width: 30vw;
+    font-size: 3.2rem;
+  }
+  .text2{
+    position: absolute;
+ 
+    padding-top: 2vh;
+    top: 40vh;
+    width: 30vw;
+    left:20vw;
+    font-size: 3.2rem;
+  }
+  .text3{
+    position: absolute;
+
+    bottom: 15vh;
+   left:20vw;
+    width: 30vw;
+    
+    font-size: 1.2rem;
+  }
+  .text4{
+    position: absolute;
+
+    top:25vh;
+   left:15vw;
+    width: 30vw;
+    
+    font-size: 2.5rem;
+  }
+  .line{
+    position: absolute;
+    left:46vw;
+    height: 75vh;
+    width: 0;
+    background-color: black;
+    border: 0.5px solid black;
+  }
+  .text5{
+    position: absolute;
+
+    top:20vh;
+    left:49vw;
+    
+    
+    font-size: 2.5rem;
+  }
+
+  .info{
+    color:rgb(239, 178, 178);
+    font-size: 2.1rem;
+    
+  }
+  .pic{
+    position: absolute;
+    top:25vh;
+    right:18vw;
+    width:40vw;
+    
+  
+  }
+  
+#parent {
+  
+  white-space: wrap;
+  overflow: hidden; 
+
+  position: relative;
+  
+}
+
+#border {
+  border-bottom: solid 3px rgba(0,255,0,.75);
+  position: absolute;
+  right: -7px;
+  width: 20px;
+}
+
+/* Animation */
+#parent {
+  animation: animated-text 2s steps(30,end) 1s 1 normal both
+}
+
+#border {
+   animation: animated-cursor 600ms steps(30,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 480px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-bottom-color: rgba(0,255,0,.75);}
+  to{border-bottom-color: transparent;}
+}
+}
+
+
+.f1{
+    
+  color:pink;
+}
+.f2{
+  color:rgb(139, 53, 188);
+
+}
+.f3{
+  color:rgb(48, 64, 232);
+  
+}
+.f4{
+  color:rgb(15, 141, 25);
+  
+}
+
+section{
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  align-content: center;
+}
+
+
+
+
+
+@media (prefers-reduced-motion) {
+  .hidden{
+    transition:none;
+  }
+}
+
+
+.linear-wipe {
+ 
+  
+  background: linear-gradient(to right, rgb(48, 48, 48) 10%, rgb(69, 69, 69) 20%, rgb(128, 126, 126) 30%, rgb(169, 168, 168) 40%
+  , rgb(171, 171, 171) 50%, rgb(143, 141, 141) 60%, rgb(79, 79, 79) 80%, rgb(43, 43, 43) 90%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 4s linear infinite;
+ 
+}
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+  .linear-wipe2 {
+ 
+  
+    background: linear-gradient(to right, rgb(251, 216, 216) 10%, rgb(232, 160, 197) 20%, rgb(210, 143, 165) 30%, rgb(207, 135, 189) 40%
+    , rgb(237, 103, 157) 50%, rgb(220, 113, 170) 60%, rgb(213, 143, 177) 80%, rgb(239, 199, 231) 90%);
+    background-size: 200% auto;
+    
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 4s linear infinite;
+   
+  }
+
+
+
