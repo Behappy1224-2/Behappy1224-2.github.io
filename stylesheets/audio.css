@@ -1,7 +1,7 @@
 #audioPlayer {
   width: 100vw;
   position: fixed;
-  bottom: 40px;
+  bottom: 0px;
 }
 #audioPlayer .audio-info-phone {
   display: none;
